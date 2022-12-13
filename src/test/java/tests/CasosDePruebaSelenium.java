@@ -51,20 +51,20 @@ public class CasosDePruebaSelenium {
         WebElement btnRegistrarse = driver.findElement(localizadorBtnRegistrarse);
         btnRegistrarse.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("confirm"))).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Vuelve a poner tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("password"))).sendKeys("ABc1233212.");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Crea una contraseña.']"))).sendKeys("ABc1233212.");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("displayname"))).sendKeys("Fabi");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon un nombre de perfil.']"))).sendKeys("Fabi");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("day"))).sendKeys("27");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='DD']"))).sendKeys("27");
 
         Select cmbMes = new Select(driver.findElement(By.id("month")));
         cmbMes.selectByValue("02");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("year"))).sendKeys("1988");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='AAAA']"))).sendKeys("1988");
 
         //driver.findElement(By.xpath("//label[@for='gender_option_male']")).click();
         WebElement opcionHombre = driver.findElement(By.xpath("//label[@for='gender_option_male']"));
@@ -92,21 +92,21 @@ public class CasosDePruebaSelenium {
         WebElement btnRegistrarse = driver.findElement(localizadorBtnRegistrarse);
         btnRegistrarse.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("confirm"))).sendKeys("fabian.,yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Vuelve a poner tu correo electrónico.']"))).sendKeys("fabian,.yanez@tsoftglobal.com");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("password"))).sendKeys("ABc1233212.");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Crea una contraseña.']"))).sendKeys("ABc1233212.");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("displayname"))).sendKeys("Fabi");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon un nombre de perfil.']"))).sendKeys("Fabi");
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("day"))).sendKeys("27");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='DD']"))).sendKeys("27");
 
         Select cmbMes = new Select(driver.findElement(By.id("month")));
         cmbMes.selectByValue("02");
 
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("year"))).sendKeys("1988");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='AAAA']"))).sendKeys("1988");
 
         WebElement optionMale = driver.findElement(By.xpath("//label[@for='gender_option_male']"));
         js.executeScript("arguments[0].scrollIntoView();", optionMale);
@@ -131,31 +131,28 @@ public class CasosDePruebaSelenium {
         WebElement btnRegistrarse = driver.findElement(localizadorBtnRegistrarse);
         btnRegistrarse.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("confirm")).sendKeys("fabian,yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Vuelve a poner tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("password")).sendKeys("12345678");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Crea una contraseña.']"))).sendKeys("12345678");
 
-        driver.findElement(By.name("displayname")).sendKeys("Fabi");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon un nombre de perfil.']"))).sendKeys("Fabi");
 
-        driver.findElement(By.id("day")).sendKeys("27");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='DD']"))).sendKeys("27");
 
         Select cmbMes = new Select(driver.findElement(By.id("month")));
         cmbMes.selectByValue("02");
 
-
-        driver.findElement(By.name("year")).sendKeys("1988");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='AAAA']"))).sendKeys("1988");
 
         WebElement optionMale = driver.findElement(By.xpath("//label[@for='gender_option_male']"));
         js.executeScript("arguments[0].scrollIntoView();", optionMale);
         optionMale.click();
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='marketing-opt-checkbox']"))).click();
 
-        driver.findElement(By.xpath("//label[@for='marketing-opt-checkbox']")).click();
-
-
-        driver.findElement(By.xpath("//label[@for='third-party-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='third-party-checkbox']"))).click();
 
         WebElement btnRegistro  = driver.findElement(By.xpath("//button[@type='submit']"));
         js.executeScript("arguments[0].scrollIntoView();", btnRegistro);
@@ -171,31 +168,32 @@ public class CasosDePruebaSelenium {
         WebElement btnRegistrarse = driver.findElement(localizadorBtnRegistrarse);
         btnRegistrarse.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("confirm")).sendKeys("fabian.1yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Vuelve a poner tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("password")).sendKeys("a");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Crea una contraseña.']"))).sendKeys("aAbBcCd");
 
-        driver.findElement(By.name("displayname")).sendKeys("Fabi");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon un nombre de perfil.']"))).sendKeys("Fabi");
 
-        driver.findElement(By.id("day")).sendKeys("27");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='DD']"))).sendKeys("27");
+
 
         Select cmbMes = new Select(driver.findElement(By.id("month")));
         cmbMes.selectByValue("02");
 
 
-        driver.findElement(By.name("year")).sendKeys("1988");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='AAAA']"))).sendKeys("1988");
 
         WebElement optionMale = driver.findElement(By.xpath("//label[@for='gender_option_male']"));
         js.executeScript("arguments[0].scrollIntoView();", optionMale);
         optionMale.click();
 
 
-        driver.findElement(By.xpath("//label[@for='marketing-opt-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='marketing-opt-checkbox']"))).click();
 
 
-        driver.findElement(By.xpath("//label[@for='third-party-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='third-party-checkbox']"))).click();
 
         WebElement btnRegistro  = driver.findElement(By.xpath("//button[@type='submit']"));
         js.executeScript("arguments[0].scrollIntoView();", btnRegistro);
@@ -205,37 +203,37 @@ public class CasosDePruebaSelenium {
     }
 
     @Test
-    public void CP005_Registro_Fallido_Dia_Valido_Del_Mes() {
+    public void CP005_Registro_Fallido_Dia_Valido_Del_Mes()  {
 
         By localizadorBtnRegistrarse = By.xpath("//button[contains(text(),'Registrarte')]");
         WebElement btnRegistrarse = driver.findElement(localizadorBtnRegistrarse);
         btnRegistrarse.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("confirm")).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Vuelve a poner tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("password")).sendKeys("ABc1233212.");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Crea una contraseña.']"))).sendKeys("ABc1233212.");
 
-        driver.findElement(By.name("displayname")).sendKeys("Fabi");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon un nombre de perfil.']"))).sendKeys("Fabi");
 
-        driver.findElement(By.id("day")).sendKeys("34");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='DD']"))).sendKeys("32");
 
         Select cmbMes = new Select(driver.findElement(By.id("month")));
         cmbMes.selectByValue("02");
 
 
-        driver.findElement(By.name("year")).sendKeys("1988");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='AAAA']"))).sendKeys("1988");
 
         WebElement optionMale = driver.findElement(By.xpath("//label[@for='gender_option_male']"));
         js.executeScript("arguments[0].scrollIntoView();", optionMale);
         optionMale.click();
 
 
-        driver.findElement(By.xpath("//label[@for='marketing-opt-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='marketing-opt-checkbox']"))).click();
 
 
-        driver.findElement(By.xpath("//label[@for='third-party-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='third-party-checkbox']"))).click();
 
         WebElement btnRegistro  = driver.findElement(By.xpath("//button[@type='submit']"));
         js.executeScript("arguments[0].scrollIntoView();", btnRegistro);
@@ -245,43 +243,44 @@ public class CasosDePruebaSelenium {
     }
 
     @Test
-    public void CP006_Registro_Fallido_Año_Valido() {
+    public void CP006_Registro_Fallido_Año_Invalido() {
 
         By localizadorBtnRegistrarse = By.xpath("//button[contains(text(),'Registrarte')]");
         WebElement btnRegistrarse = driver.findElement(localizadorBtnRegistrarse);
         btnRegistrarse.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("confirm")).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Vuelve a poner tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("password")).sendKeys("ABc1233212.");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Crea una contraseña.']"))).sendKeys("ABc1233212.");
 
-        driver.findElement(By.name("displayname")).sendKeys("Fabi");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon un nombre de perfil.']"))).sendKeys("Fabi");
 
-        driver.findElement(By.id("day")).sendKeys("27");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='DD']"))).sendKeys("27");
+
 
         Select cmbMes = new Select(driver.findElement(By.id("month")));
         cmbMes.selectByValue("02");
 
-
-        driver.findElement(By.name("year")).sendKeys("  ");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='AAAA']"))).sendKeys("2023");
 
         WebElement optionMale = driver.findElement(By.xpath("//label[@for='gender_option_male']"));
         js.executeScript("arguments[0].scrollIntoView();", optionMale);
         optionMale.click();
 
 
-        driver.findElement(By.xpath("//label[@for='marketing-opt-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='marketing-opt-checkbox']"))).click();
 
 
-        driver.findElement(By.xpath("//label[@for='third-party-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='third-party-checkbox']"))).click();
 
         WebElement btnRegistro  = driver.findElement(By.xpath("//button[@type='submit']"));
         js.executeScript("arguments[0].scrollIntoView();", btnRegistro);
         btnRegistro.click();
 
-        Assert.assertEquals(driver.findElement(By.xpath("//div[contains(text(),'Indica un año válido.')]")).getText(),"Indica un año válido.");
+        Assert.assertEquals(driver.findElement(By.xpath("//div[contains(text(),'Lo sentimos, pero no cumples los requisitos de edad de Spotify.')]")).getText(),"Lo sentimos, pero no cumples los requisitos de edad de Spotify.");
+
 
     }
 
@@ -292,31 +291,29 @@ public class CasosDePruebaSelenium {
         WebElement btnRegistrarse = driver.findElement(localizadorBtnRegistrarse);
         btnRegistrarse.click();
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("confirm")).sendKeys("fabian.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Vuelve a poner tu correo electrónico.']"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("password")).sendKeys("ABc1233212.");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Crea una contraseña.']"))).sendKeys("ABc1233212.");
 
-        driver.findElement(By.name("displayname")).sendKeys("Fabi");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Pon un nombre de perfil.']"))).sendKeys("Fabi");
 
-        driver.findElement(By.id("day")).sendKeys("27");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='DD']"))).sendKeys("27");
+
 
         Select cmbMes = new Select(driver.findElement(By.id("month")));
         cmbMes.selectByValue("02");
 
-
-        driver.findElement(By.name("year")).sendKeys("1988");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='AAAA']"))).sendKeys("1988");
 
         WebElement optionFemale = driver.findElement(By.xpath("//label[@for='gender_option_female']"));
         js.executeScript("arguments[0].scrollIntoView();", optionFemale);
         optionFemale.click();
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='marketing-opt-checkbox']"))).click();
 
-        driver.findElement(By.xpath("//label[@for='marketing-opt-checkbox']")).click();
-
-
-        driver.findElement(By.xpath("//label[@for='third-party-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='third-party-checkbox']"))).click();
 
         WebElement btnRegistro  = driver.findElement(By.xpath("//button[@type='submit']"));
         js.executeScript("arguments[0].scrollIntoView();", btnRegistro);
