@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c53b996a-1469-4c29-8ec6-de40834c1c35" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ejemploSelenium/ElementosWebSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejemploSelenium/ElementosWebSelenium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ejemploSelenium/EsperasSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejemploSelenium/EsperasSelenium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ejemploSelenium/HolaMundoSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejemploSelenium/HolaMundoSelenium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ejemploSelenium/MetodosNavegadorNavegacionSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejemploSelenium/MetodosNavegadorNavegacionSelenium.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/CasosDePruebaSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CasosDePruebaSelenium.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

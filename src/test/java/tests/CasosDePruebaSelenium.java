@@ -94,29 +94,28 @@ public class CasosDePruebaSelenium {
 
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("email"))).sendKeys("fabian.yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("confirm")).sendKeys("fabian,.yanez@tsoftglobal.com");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("confirm"))).sendKeys("fabian.,yanez@tsoftglobal.com");
 
-        driver.findElement(By.name("password")).sendKeys("ABc1233212.");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("password"))).sendKeys("ABc1233212.");
 
-        driver.findElement(By.name("displayname")).sendKeys("Fabi");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("displayname"))).sendKeys("Fabi");
 
-        driver.findElement(By.id("day")).sendKeys("27");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("day"))).sendKeys("27");
 
         Select cmbMes = new Select(driver.findElement(By.id("month")));
         cmbMes.selectByValue("02");
 
 
-        driver.findElement(By.name("year")).sendKeys("1988");
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("year"))).sendKeys("1988");
 
         WebElement optionMale = driver.findElement(By.xpath("//label[@for='gender_option_male']"));
         js.executeScript("arguments[0].scrollIntoView();", optionMale);
         optionMale.click();
 
 
-        driver.findElement(By.xpath("//label[@for='marketing-opt-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='marketing-opt-checkbox']"))).click();
 
-
-        driver.findElement(By.xpath("//label[@for='third-party-checkbox']")).click();
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[@for='third-party-checkbox']"))).click();
 
         WebElement btnRegistro  = driver.findElement(By.xpath("//button[@type='submit']"));
         js.executeScript("arguments[0].scrollIntoView();", btnRegistro);
