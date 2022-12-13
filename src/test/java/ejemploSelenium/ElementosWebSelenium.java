@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class MasMetodosSelenium {
+public class ElementosWebSelenium {
     public static void main(String[] args) throws InterruptedException {
 
         String rutaDriver = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
@@ -101,7 +101,7 @@ public class MasMetodosSelenium {
         String resultadoActual = driver.findElement(By.xpath("//div[contains(text(),'Confirma que no eres un robot.')]")).getText();
 
         if(resultadoActual.equals(resultadoEsperado)){
-            System.out.println("Caso ok, se verifica ausencia de capcha");
+            System.out.println("Caso ok, se verifica ausencia de captcha");
         }else {
             System.out.println("Error.");
         }

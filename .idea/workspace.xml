@@ -4,27 +4,159 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c53b996a-1469-4c29-8ec6-de40834c1c35" name="Changes" comment="" />
+    <list default="true" id="c53b996a-1469-4c29-8ec6-de40834c1c35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ejemploSelenium/ElementosWebSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejemploSelenium/ElementosWebSelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ejemploSelenium/EsperasSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejemploSelenium/EsperasSelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ejemploSelenium/HolaMundoSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejemploSelenium/HolaMundoSelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ejemploSelenium/MetodosNavegadorNavegacionSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejemploSelenium/MetodosNavegadorNavegacionSelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CasosDePruebaSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CasosDePruebaSelenium.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2IlT0uPFwxC02uFqZATqWZmFU6a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Fabian.Yanez/Proyectos/RepasoSelenium/src/test/java/pages/bci/HomePage.java&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Fabian.Yanez\Proyectos\SeleniumPrimerPaso\src\test\resources\drivers" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests" />
+      <recent name="ejemploSelenium" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.CasosDePruebaSelenium.CP001_Registro_Fallido_Captcha_En_Blanco">
+    <configuration name="CasosDePruebaSelenium.CP001_Registro_Fallido_Captcha_En_Blanco" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumPrimerPaso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CasosDePruebaSelenium" />
+      <option name="METHOD_NAME" value="CP001_Registro_Fallido_Captcha_En_Blanco" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CasosDePruebaSelenium.CP006_Registro_Fallido_Año_Valido" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumPrimerPaso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CasosDePruebaSelenium" />
+      <option name="METHOD_NAME" value="CP006_Registro_Fallido_Año_Valido" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CasosDePruebaSelenium.CP007_Registro_Btn_Mujer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumPrimerPaso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CasosDePruebaSelenium" />
+      <option name="METHOD_NAME" value="CP007_Registro_Btn_Mujer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CasosDePruebaSelenium.CP007_Registro_Fallido_Selecciona_Mes" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumPrimerPaso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CasosDePruebaSelenium" />
+      <option name="METHOD_NAME" value="CP007_Registro_Fallido_Selecciona_Mes" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CasosDePruebaSelenium.CP007_Registro_Ir_A_Google" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumPrimerPaso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CasosDePruebaSelenium" />
+      <option name="METHOD_NAME" value="CP007_Registro_Ir_A_Google" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CasosDePruebaSelenium.CP001_Registro_Fallido_Captcha_En_Blanco" />
+        <item itemvalue="TestNG.CasosDePruebaSelenium.CP006_Registro_Fallido_Año_Valido" />
+        <item itemvalue="TestNG.CasosDePruebaSelenium.CP007_Registro_Btn_Mujer" />
+        <item itemvalue="TestNG.CasosDePruebaSelenium.CP007_Registro_Fallido_Selecciona_Mes" />
+        <item itemvalue="TestNG.CasosDePruebaSelenium.CP007_Registro_Ir_A_Google" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,5 +167,16 @@
       <updated>1670754952800</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
